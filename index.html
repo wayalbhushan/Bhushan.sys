@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan Wayal | Systems & Security Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="logo magnetic-container">BMW<span>.sys</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#research" class="magnetic">Research</a></li>
+                <li><a href="#experience" class="magnetic">Experience</a></li>
+                <li><a href="#projects" class="magnetic">Projects</a></li>
+                <li><a href="#expertise" class="magnetic">Expertise</a></li>
+                <li><a href="#contact" class="magnetic">Contact</a></li>
+                <li class="nav-socials">
+                    <a href="https://github.com/wayalbhushan/" target="_blank" class="magnetic social-icon" title="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhushan-wayal-b71w44/" target="_blank" class="magnetic social-icon" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:wayalbhushan7144@gmail.com" class="magnetic social-icon" title="Email">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </li>
+                <li><button id="terminal-btn" class="magnetic btn-cyber">Terminal</button></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero reveal">
+            <div class="hero-content">
+                <h1 class="headline">Hi, I'm <span class="typewriter"></span><span class="blinking-cursor">_</span></h1>
+                <p class="subtitle">IIIT Bhopal CS '27 operating at the intersection of systems engineering, offensive security, and air-gapped AI infrastructure.<br/> 
+                    Specializing in <strong>High-Performance C++ Engines</strong> &middot; <strong>Vector Databases</strong> &middot; <strong>Low-Level Security</strong></p>
+                <div class="badges">
+                    <span class="badge pulse-anim">Systems Engineering</span>
+                    <span class="badge pulse-anim delay-1">AI Infrastructure</span>
+                    <span class="badge pulse-anim delay-2">Offensive Security</span>
+                </div>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary magnetic-container">View Infrastructure</a>
+                    <button id="hero-terminal-btn" class="btn-secondary magnetic-container btn-glitch" data-text="Initialize Terminal">Initialize Terminal</button>
+                </div>
+            </div>
+            
+            <div class="hero-terminal-widget glass-card">
+                <div class="widget-header">
+                    <span class="btn-dot close"></span>
+                    <span class="btn-dot min"></span>
+                    <span class="btn-dot max"></span>
+                </div>
+                <div class="widget-body">
+                    <p><span class="prompt">$ whoami</span> &rarr; bhushan_wayal | systems + security engineer</p>
+                    <p><span class="prompt">$ stack</span> &rarr; C++17 &middot; Python &middot; PostgreSQL &middot; Linux</p>
+                    <p><span class="prompt">$ status</span> &rarr; open_to_internships &check;</p>
+                    <p><span class="prompt">$ projects --stats</span> &rarr; 580K packets &middot; 10M+ Vector Embeddings &check;</p>
+                    <p><span class="prompt">$ latest</span> &rarr; NexusDB: Bare-metal C++ Vector Engine & Offline RAG</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Metrics Strip -->
+        <div class="metrics-banner reveal" style="margin: 2rem 0 6rem; padding: 2.5rem 2rem; background: rgba(0, 0, 0, 0.4); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+            <div class="metrics-banner-container reveal-item stagger-1" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; max-width: 1200px; margin: 0 auto; text-align: center;">
+                <div class="metric"><span class="metric-number" style="display: block; font-size: 2.5rem; font-weight: bold; color: var(--acc-color-1); font-family: var(--font-tech);">580K+</span><span class="metric-label" style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Packets Analyzed</span></div>
+                <div class="metric-divider" style="width: 1px; background: var(--glass-border);"></div>
+                <div class="metric"><span class="metric-number" style="display: block; font-size: 2.5rem; font-weight: bold; color: var(--acc-color-2); font-family: var(--font-tech);">700+</span><span class="metric-label" style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Students Trained</span></div>
+                <div class="metric-divider" style="width: 1px; background: var(--glass-border);"></div>
+                <div class="metric"><span class="metric-number" style="display: block; font-size: 2.5rem; font-weight: bold; color: var(--acc-color-1); font-family: var(--font-tech);">3</span><span class="metric-label" style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Internships</span></div>
+                <div class="metric-divider" style="width: 1px; background: var(--glass-border);"></div>
+                <div class="metric"><span class="metric-number" style="display: block; font-size: 2.5rem; font-weight: bold; color: var(--acc-color-2); font-family: var(--font-tech);">5</span><span class="metric-label" style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Systems Built</span></div>
+            </div>
+        </div>
+
+        <!-- Spotlight / Research Section -->
+        <section id="research" class="section reveal">
+            <h2 class="section-title reveal-item">01. Applied Research</h2>
+            <div class="glass-card research-card reveal-item stagger-1">
+                <div class="research-header">
+                    <h3>Volatile Memory Forensics Engine</h3>
+                    <a href="https://github.com/wayalbhushan/volatile-memory-analysis" target="_blank" class="github-link magnetic" title="View Repository">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <span>GitHub Repository ↗</span>
+                    </a>
+                </div>
+                <p class="context-text"><strong>Context:</strong> A forensic security tool for detecting fileless malware and process-injection attacks by parsing and analyzing raw memory dumps — evading standard disk-based defenses.</p>
+                
+                <div class="visual-diagram">
+                    <div class="diagram-node">Raw Memory Dump</div>
+                    <div class="diagram-arrow animated-arrow"></div>
+                    <div class="diagram-gateway magnetic-container">
+                        <div class="pulse-ring"></div>
+                        <span class="gateway-text">psutil Parser Engine</span>
+                    </div>
+                    <div class="diagram-arrow animated-arrow"></div>
+                    <div class="diagram-node success">Threat Classification Output</div>
+                </div>
+
+                <div class="key-finding">
+                    Targets fileless malware that leaves zero disk artifacts — the hardest category to detect.<br/><br/>
+                    Parses process memory space directly using Python + psutil to identify injected shellcode, hollowed processes, and anomalous memory regions that standard AV scanners miss entirely.
+                </div>
+
+                <div class="tech-stack">
+                    <span>Python</span><span>psutil</span><span>Memory Forensics</span><span>Malware Analysis</span><span>Incident Response</span>
+                </div>
+            </div>
+
+            <div class="glass-card research-card reveal-item stagger-2" style="margin-top: 2rem;">
+                <div class="research-header">
+                    <h3>Levelled Homomorphic Encryption for O(1) Authentication</h3>
+                    <span class="badge pulse-anim" style="font-size: 0.7em; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--acc-color-2); color: var(--acc-color-2); border-radius: 4px;">PQC RESEARCH</span>
+                </div>
+                <p class="context-text"><strong>Context:</strong> A post quantum batch authentication architecture utilizing the Brakerski Fan Vercauteren (BFV) homomorphic encryption scheme for IoT healthcare networks. Solves the O(N) verification bottleneck.</p>
+                
+                <div class="aegis-topology-hover-area">
+                    <svg class="pqc-diagram" viewBox="0 0 600 450" style="width: 100%; max-width: 600px; margin: 25px auto; display: block; overflow: visible;">
+                        <style>
+                            .diagram-box { fill: rgba(0, 240, 255, 0.05); stroke: var(--acc-color-2); stroke-width: 2px; }
+                            .diagram-box-head { fill: rgba(0, 255, 102, 0.05); stroke: var(--acc-color-1); stroke-width: 2px; }
+                            .diagram-text { font-family: var(--font-tech); font-size: 14px; fill: var(--text-primary); text-anchor: middle; font-weight: bold; }
+                            .diagram-sub { font-family: var(--font-tech); font-size: 12px; fill: var(--text-secondary); text-anchor: middle; }
+                            .diagram-label { font-family: var(--font-tech); font-size: 12px; fill: var(--acc-color-1); text-anchor: middle; }
+                            .anim-line { fill: none; stroke: var(--acc-color-2); stroke-width: 2px; stroke-dasharray: 6 6; }
+                        </style>
+                        
+                        <rect x="100" y="20" width="140" height="50" rx="6" class="diagram-box" />
+                        <text x="170" y="40" class="diagram-text">IoT Device 1</text>
+                        <text x="170" y="58" class="diagram-sub">EncBFV(Token 1)</text>
+
+                        <rect x="360" y="20" width="140" height="50" rx="6" class="diagram-box" />
+                        <text x="430" y="40" class="diagram-text">IoT Device N</text>
+                        <text x="430" y="58" class="diagram-sub">EncBFV(Token N)</text>
+
+                        <rect x="150" y="140" width="300" height="80" rx="6" class="diagram-box-head" />
+                        <text x="300" y="165" class="diagram-text">Edge Authentication Gateway (EAG)</text>
+                        <text x="300" y="185" class="diagram-label">Homomorphic Batch Aggregation</text>
+                        <text x="300" y="205" class="diagram-sub">C_batch = Σ (α_i * C_i)</text>
+
+                        <rect x="200" y="280" width="200" height="70" rx="6" class="diagram-box" />
+                        <text x="300" y="305" class="diagram-text">Cloud Verifier</text>
+                        <text x="300" y="325" class="diagram-sub">Dec(sk, C_batch)</text>
+                        <text x="300" y="340" class="diagram-label">O(1) Verification Complexity</text>
+
+                        <rect x="230" y="400" width="140" height="30" rx="4" fill="var(--acc-color-1)" />
+                        <text x="300" y="420" font-family="var(--font-tech)" font-size="13" font-weight="bold" fill="rgba(0,0,0,0.8)" text-anchor="middle">[BATCH VERIFIED]</text>
+
+                        <path d="M170 70 L170 110 L250 110 L250 140" class="anim-line" />
+                        <path d="M430 70 L430 110 L350 110 L350 140" class="anim-line" />
+                        <path d="M300 220 L300 280" class="anim-line" />
+                        <path d="M300 350 L300 400" class="anim-line" />
+                    </svg>
+                </div>
+
+                <div class="key-finding">
+                    Allows an edge authentication gateway to aggregate individual encrypted device tokens into a single randomized linear combination using BFV math. The cloud verifier authenticates the entire device group through a single constant time decryption operation, highly reducing latency for dense healthcare environments.
+                </div>
+                
+                <div class="tech-stack">
+                    <span>Post-Quantum Crypto</span><span>BFV Homomorphic</span><span>IoT Security</span><span>O(1) Complexity</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section reveal">
+            <h2 class="section-title reveal-item">02. Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal-item stagger-1">
+                    <div class="timeline-dot pulse-anim"></div>
+                    <div class="timeline-content glass-card magnetic-lift">
+                        <h3>Software & Systems Security Intern</h3>
+                        <p class="company">@ NIT Bhopal | Dec 2024 – Feb 2025</p>
+                        <ul>
+                            <li>Engineered async Python pipelines to parse high-volume system logs — replaced manual monitoring with automated threat anomaly detection</li>
+                            <li>Built dynamic log extractors for hybrid Linux/Windows environments, converting raw event streams into structured telemetry</li>
+                            <li>Mentored 250+ students in algorithmic threat modeling and secure system architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item stagger-2">
+                    <div class="timeline-dot pulse-anim delay-1"></div>
+                    <div class="timeline-content glass-card magnetic-lift">
+                        <h3>Backend & Security Engineering Intern</h3>
+                        <p class="company">@ TCR Security | Oct 2024 – Dec 2024</p>
+                        <ul>
+                            <li>Architected Python async data ingestion engine for threat intel feeds — eliminated 20+ hours of manual processing/month</li>
+                            <li>Debugged web architectures via raw HTTP traffic analysis; identified and fixed critical data-exposure risks</li>
+                            <li>Executed secure code reviews in Python and Java — identified algorithmic bottlenecks and logical execution flaws in production</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item stagger-3">
+                    <div class="timeline-dot pulse-anim delay-2"></div>
+                    <div class="timeline-content glass-card magnetic-lift">
+                        <h3>Network Systems Intern</h3>
+                        <p class="company">@ Cisco | May 2024 – Jul 2024</p>
+                        <ul>
+                            <li>Simulated 200+ node enterprise networks with strict ACL architecture</li>
+                            <li>Analyzed raw PCAPs in Wireshark to track TCP states and isolate anomalous traffic patterns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item stagger-4">
+                    <div class="timeline-dot pulse-anim delay-3"></div>
+                    <div class="timeline-content glass-card magnetic-lift">
+                        <h3>Co-Coordinator, Xploit</h3>
+                        <p class="company">@ IIIT Bhopal Cybersecurity Club | Aug 2025 – Present</p>
+                        <ul>
+                            <li>Architected and maintained scalable server infrastructure for Capture The Flag (CTF) competition environments — supporting concurrent challenge deployments under load</li>
+                            <li>Trained 700+ students in reverse engineering, vulnerability research, and offensive security fundamentals through structured workshops and live CTF competitions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title reveal-item">03. Infrastructure & Projects</h2>
+            <div class="card-grid">
+                <div class="glass-card project-card featured-project magnetic-lift reveal-item stagger-1">
+                    <div class="project-header">
+                        <h3>NexusDB</h3>
+                        <a href="https://github.com/wayalbhushan/NexusDB" target="_blank" class="github-link magnetic" title="View Source">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub Repository ↗</span>
+                        </a>
+                    </div>
+                    <p class="subtitle">Bare-Metal Vector Engine & RAG <span class="badge pulse-anim" style="font-size: 0.7em; margin-left: 10px; padding: 2px 6px; background: rgba(0, 255, 102, 0.1); border: 1px solid var(--acc-color-1); color: var(--acc-color-1); border-radius: 4px;">FLAGSHIP</span></p>
+                    <p>A custom vector database written entirely from scratch in C++17. Implements a Hierarchical Navigable Small World (HNSW) graph index for incredibly fast semantic retrieval. Features a completely air gapped RAG pipeline using local LLMs (Ollama) and manual SIMD (AVX) loop unrolling for high speed mathematical throughput.</p>
+                    
+                    <div class="aegis-topology-hover-area">
+                        <svg class="aegis-diagram" viewBox="0 0 600 480" style="width: 100%; max-width: 600px; margin: 25px auto; display: block; overflow: visible;">
+                            <style>
+                                .diagram-box { fill: rgba(0, 240, 255, 0.05); stroke: var(--acc-color-2); stroke-width: 2px; }
+                                .diagram-box-head { fill: rgba(0, 255, 102, 0.05); stroke: var(--acc-color-1); stroke-width: 2px; }
+                                .diagram-text { font-family: var(--font-tech); font-size: 14px; fill: var(--text-primary); text-anchor: middle; font-weight: bold; }
+                                .diagram-sub { font-family: var(--font-tech); font-size: 12px; fill: var(--text-secondary); text-anchor: middle; }
+                                .diagram-label { font-family: var(--font-tech); font-size: 12px; fill: var(--acc-color-1); text-anchor: middle; }
+                                .anim-line { fill: none; stroke: var(--acc-color-2); stroke-width: 2px; stroke-dasharray: 6 6; }
+                            </style>
+                            
+                            <rect x="210" y="10" width="180" height="50" rx="6" class="diagram-box-head" />
+                            <text x="300" y="30" class="diagram-text">Next.js UI Proxy</text>
+                            <text x="300" y="48" class="diagram-sub">(Query Input)</text>
+
+                            <rect x="210" y="110" width="180" height="50" rx="6" class="diagram-box" />
+                            <text x="300" y="130" class="diagram-text">Ollama Daemon</text>
+                            <text x="300" y="148" class="diagram-sub">(Nomic 768D Embeddings)</text>
+
+                            <rect x="150" y="210" width="300" height="80" rx="6" class="diagram-box" />
+                            <text x="300" y="235" class="diagram-text">C++ HNSW Engine</text>
+                            <text x="300" y="255" class="diagram-label">SIMD AVX Instructions</text>
+                            <text x="300" y="275" class="diagram-sub">(Shared Mutex Memory Locks)</text>
+
+                            <rect x="210" y="340" width="180" height="50" rx="6" class="diagram-box-head" />
+                            <text x="300" y="360" class="diagram-text">Llama 3.2</text>
+                            <text x="300" y="378" class="diagram-sub">(Air-gapped RAG Inference)</text>
+
+                            <rect x="230" y="435" width="140" height="30" rx="4" fill="var(--acc-color-1)" />
+                            <text x="300" y="455" font-family="var(--font-tech)" font-size="13" font-weight="bold" fill="rgba(0,0,0,0.8)" text-anchor="middle">[SECURE OUTPUT]</text>
+
+                            <path d="M300 60 L300 110" class="anim-line" />
+                            <path d="M300 160 L300 210" class="anim-line" />
+                            <path d="M300 290 L300 340" class="anim-line" />
+                            <path d="M300 390 L300 435" class="anim-line" />
+                        </svg>
+                    </div>
+                    
+                    <div class="metrics-strip">
+                        <span>C++17 Native</span>
+                        <span>HNSW Indexing</span>
+                        <span>SIMD AVX Math</span>
+                        <span>Zero Cloud APIs</span>
+                    </div>
+                    <div class="tech-stack"><span>C++17</span><span>Ollama</span><span>Next.js</span><span>Llama3.2</span><span>Vector Math</span></div>
+                </div>
+
+                <div class="glass-card project-card featured-project magnetic-lift reveal-item stagger-2">
+                    <div class="project-header">
+                        <h3>Aegis DPI</h3>
+                        <a href="https://github.com/wayalbhushan/Aegis-DPI" target="_blank" class="github-link magnetic" title="View Source">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub Repository ↗</span>
+                        </a>
+                    </div>
+                    <p class="subtitle">Deep Packet Inspection Engine <span class="badge pulse-anim" style="font-size: 0.7em; margin-left: 10px; padding: 2px 6px; background: rgba(0, 255, 102, 0.1); border: 1px solid var(--acc-color-1); color: var(--acc-color-1); border-radius: 4px;">FLAGSHIP</span></p>
+                    <p>Enterprise-grade C++17 DPI engine. 1 Reader thread &rarr; FNV-1a hash routing across 4 Load Balancer threads &rarr; 16 Fast Path workers. <code>alignas(64)</code> cache-line padding eliminates L1/L2 false sharing. Reverse-engineers TLS Client Hello to extract SNI without breaking encryption. Zero external dependencies — libpcap entirely bypassed via native <code>std::ifstream</code> binary mapping.</p>
+                    
+                    <div class="aegis-topology-hover-area">
+                        <svg class="aegis-diagram" viewBox="0 0 600 480" style="width: 100%; max-width: 600px; margin: 25px auto; display: block; overflow: visible;">
+                            <style>
+                                .diagram-box { fill: rgba(0, 240, 255, 0.05); stroke: var(--acc-color-2); stroke-width: 2px; }
+                                .diagram-box-head { fill: rgba(0, 255, 102, 0.05); stroke: var(--acc-color-1); stroke-width: 2px; }
+                                .diagram-text { font-family: var(--font-tech); font-size: 14px; fill: var(--text-primary); text-anchor: middle; font-weight: bold; }
+                                .diagram-sub { font-family: var(--font-tech); font-size: 12px; fill: var(--text-secondary); text-anchor: middle; }
+                                .diagram-label { font-family: var(--font-tech); font-size: 12px; fill: var(--acc-color-1); text-anchor: middle; }
+                                .anim-line { fill: none; stroke: var(--acc-color-2); stroke-width: 2px; stroke-dasharray: 6 6; }
+                            </style>
+
+                            <!-- Flow Paths (Reader to LBs) -->
+                            <path d="M300 60 L300 95 L170 95 L170 120" class="anim-line" />
+                            <path d="M300 60 L300 95 L430 95 L430 120" class="anim-line" />
+                            
+                            <!-- Hash Label Wrapper Node -->
+                            <rect x="210" y="85" width="180" height="20" fill="var(--bg-color)" rx="3" />
+                            <text x="300" y="99" class="diagram-label">FNV-1a Hash(Five-Tuple) % M</text>
+
+                            <!-- Flow Paths (LB to FPs) -->
+                            <path d="M170 170 L170 205 L110 205 L110 240" class="anim-line" />
+                            <path d="M170 170 L170 205 L230 205 L230 240" class="anim-line" />
+                            <rect x="135" y="195" width="70" height="20" fill="var(--bg-color)" rx="3" />
+                            <text x="170" y="209" class="diagram-label">Hash % N</text>
+
+                            <path d="M430 170 L430 205 L370 205 L370 240" class="anim-line" />
+                            <path d="M430 170 L430 205 L490 205 L490 240" class="anim-line" />
+                            <rect x="395" y="195" width="70" height="20" fill="var(--bg-color)" rx="3" />
+                            <text x="430" y="209" class="diagram-label">Hash % N</text>
+
+                            <!-- Flow Paths (FPs to Output) -->
+                            <path d="M110 290 L110 325 L300 325" class="anim-line" />
+                            <path d="M230 290 L230 325 L300 325" class="anim-line" />
+                            <path d="M370 290 L370 325 L300 325" class="anim-line" />
+                            <path d="M490 290 L490 325 L300 325" class="anim-line" />
+                            <path d="M300 325 L300 350" class="anim-line" />
+
+                            <!-- Filtered PCAP Output stream -->
+                            <path d="M300 400 L300 435" class="anim-line" />
+
+                            <!-- Reader Node -->
+                            <rect x="210" y="10" width="180" height="50" rx="6" class="diagram-box-head" />
+                            <text x="300" y="30" class="diagram-text">Reader Thread</text>
+                            <text x="300" y="48" class="diagram-sub">(Ingests binary)</text>
+
+                            <!-- Load Balancers -->
+                            <rect x="100" y="120" width="140" height="50" rx="6" class="diagram-box" />
+                            <text x="170" y="140" class="diagram-text">LB0 Thread</text>
+                            <text x="170" y="158" class="diagram-sub">(Load Balancer)</text>
+
+                            <rect x="360" y="120" width="140" height="50" rx="6" class="diagram-box" />
+                            <text x="430" y="140" class="diagram-text">LB1 Thread</text>
+                            <text x="430" y="158" class="diagram-sub">(Load Balancer)</text>
+
+                            <!-- Fast Path Workers -->
+                            <rect x="70" y="240" width="80" height="50" rx="4" class="diagram-box" />
+                            <text x="110" y="260" class="diagram-text">FP0</text>
+                            <text x="110" y="278" class="diagram-sub">(Worker)</text>
+
+                            <rect x="190" y="240" width="80" height="50" rx="4" class="diagram-box" />
+                            <text x="230" y="260" class="diagram-text">FP1</text>
+                            <text x="230" y="278" class="diagram-sub">(Worker)</text>
+
+                            <rect x="330" y="240" width="80" height="50" rx="4" class="diagram-box" />
+                            <text x="370" y="260" class="diagram-text">FP2</text>
+                            <text x="370" y="278" class="diagram-sub">(Worker)</text>
+
+                            <rect x="450" y="240" width="80" height="50" rx="4" class="diagram-box" />
+                            <text x="490" y="260" class="diagram-text">FP3</text>
+                            <text x="490" y="278" class="diagram-sub">(Worker)</text>
+
+                            <!-- Output Queue Node -->
+                            <rect x="210" y="350" width="180" height="50" rx="6" class="diagram-box-head" />
+                            <text x="300" y="370" class="diagram-text">Output Queue</text>
+                            <text x="300" y="388" class="diagram-sub">(Serialized packets)</text>
+
+                            <!-- Final Filtered Vector Output -->
+                            <rect x="230" y="435" width="140" height="30" rx="4" fill="var(--acc-color-1)" />
+                            <text x="300" y="455" font-family="var(--font-tech)" font-size="13" font-weight="bold" fill="rgba(0,0,0,0.8)" text-anchor="middle">[FILTERED PCAP]</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="metrics-strip">
+                        <span>580,234 packets</span>
+                        <span>75MB processed</span>
+                        <span>16-thread topology</span>
+                        <span>17.27% drop rate</span>
+                        <span>45,021 connections</span>
+                    </div>
+
+                    <div class="tech-stack"><span>C++17</span><span>CMake</span><span>Multithreading</span><span>TLS Reverse Engineering</span><span>FNV-1a Hashing</span><span>PCAP</span></div>
+                </div>
+
+                <div class="glass-card project-card magnetic-lift reveal-item stagger-3">
+                    <div class="project-header">
+                        <h3>Identity Graph Resolution</h3>
+                        <a href="https://github.com/wayalbhushan/Identity-Reconciliation" target="_blank" class="project-github magnetic" title="View Source">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <p class="subtitle">Concurrent Backend Architecture</p>
+                    <p>A highly concurrent backend architecture built with Python and PostgreSQL. Engineered to handle strict ACID transactions for distributed, multi-tiered systems under heavy concurrency by employing robust TOCTOU elimination algorithms.</p>
+                    <div class="tech-stack"><span>Python</span><span>PostgreSQL</span><span>Graph Algorithms</span><span>ACID Transactions</span><span>TOCTOU Elimination</span></div>
+                </div>
+
+                <div class="glass-card project-card magnetic-lift reveal-item stagger-4">
+                    <div class="project-header">
+                        <h3>VaultX</h3>
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <a href="https://github.com/wayalbhushan/vaultx" target="_blank" class="project-github magnetic" title="View Source">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://vault-x-five.vercel.app" target="_blank" class="project-github magnetic" title="Live Preview">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="subtitle">Full-Stack Secrets Manager <span class="badge pulse-anim" style="font-size: 0.7em; margin-left: 10px; padding: 2px 6px; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--acc-color-2); color: var(--acc-color-2); border-radius: 4px;">ACTIVE BUILD</span></p>
+                    <p>Secure full-stack secrets manager leveraging the MERN stack with JWT authentication, full 2FA implementation, and robust AES-256-CBC encryption at rest. Integrates detailed logging and enterprise-grade security within a modern, responsive Tailwind UI.</p>
+                    <div class="tech-stack"><span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT/2FA</span><span>Tailwind CSS</span></div>
+                </div>
+
+                <div class="glass-card project-card magnetic-lift reveal-item stagger-5">
+                    <div class="project-header">
+                        <h3>Volatile Memory Forensics</h3>
+                        <a href="https://github.com/wayalbhushan/volatile-memory-analysis" target="_blank" class="project-github magnetic" title="View Source">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <p class="subtitle">Fileless Malware Detection Engine <span class="badge pulse-anim" style="font-size: 0.7em; margin-left: 10px; padding: 2px 6px; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--acc-color-2); color: var(--acc-color-2); border-radius: 4px;">SECURITY RESEARCH</span></p>
+                    <p>Forensic tool detecting process-injection attacks and fileless malware by parsing raw memory dumps directly — evades disk-based AV defenses entirely. Identifies shellcode injection, hollowed processes, and anomalous memory regions.</p>
+                    <div class="tech-stack"><span>Python</span><span>psutil</span><span>Memory Forensics</span><span>Malware Analysis</span><span>Threat Detection</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise / Skills -->
+        <section id="expertise" class="section reveal">
+            <h2 class="section-title reveal-item">04. Technical Expertise</h2>
+            <div class="skills-grid three-col">
+                <div class="skill-category glass-card magnetic-lift reveal-item stagger-1">
+                    <h3><i class="fas fa-shield-alt" style="color: var(--acc-color-1); margin-right: 8px;"></i> Security Domains</h3>
+                    <div class="tags tag-fade-in">
+                        <span style="--idx: 1;"><i class="fas fa-network-wired"></i> Network Security</span>
+                        <span style="--idx: 2;"><i class="fas fa-user-secret"></i> Penetration Testing</span>
+                        <span style="--idx: 3;"><i class="fas fa-bug"></i> VAPT</span>
+                        <span style="--idx: 4;"><i class="fas fa-cogs"></i> Reverse Engineering</span>
+                        <span style="--idx: 5;"><i class="fas fa-radar"></i> Threat Detection</span>
+                        <span style="--idx: 6;"><i class="fas fa-fire-extinguisher"></i> Incident Response</span>
+                        <span style="--idx: 7;"><i class="fas fa-memory"></i> Memory Forensics</span>
+                        <span style="--idx: 8;"><i class="fas fa-lock"></i> API Security</span>
+                        <span style="--idx: 9;"><i class="fas fa-globe"></i> OWASP</span>
+                        <span style="--idx: 10;"><i class="fas fa-search-plus"></i> Vuln Assessment</span>
+                        <span style="--idx: 11;"><i class="fas fa-key"></i> TLS/Cryptography</span>
+                        <span style="--idx: 12;"><i class="fas fa-atom"></i> Post-Quantum Crypto</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card magnetic-lift reveal-item stagger-2">
+                    <h3><i class="fas fa-microchip" style="color: var(--acc-color-2); margin-right: 8px;"></i> Systems Engineering</h3>
+                    <div class="tags tag-fade-in">
+                        <span style="--idx: 1;"><i class="devicon-cplusplus-plain"></i> C/C++17</span>
+                        <span style="--idx: 2;"><i class="fas fa-project-diagram"></i> Multithreading</span>
+                        <span style="--idx: 3;"><i class="fas fa-random"></i> Concurrency</span>
+                        <span style="--idx: 4;"><i class="fas fa-microchip"></i> Memory Management</span>
+                        <span style="--idx: 5;"><i class="devicon-linux-plain"></i> Linux/Unix Internals</span>
+                        <span style="--idx: 6;"><i class="fas fa-server"></i> Distributed Systems</span>
+                        <span style="--idx: 7;"><i class="fas fa-sitemap"></i> System Design</span>
+                        <span style="--idx: 8;"><i class="fas fa-bolt"></i> SIMD/AVX Optimization</span>
+                        <span style="--idx: 9;"><i class="fas fa-database"></i> Vector Databases</span>
+                        <span style="--idx: 10;"><i class="fas fa-check-double"></i> ACID Transactions</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card magnetic-lift reveal-item stagger-3">
+                    <h3><i class="fas fa-code" style="color: var(--acc-color-1); margin-right: 8px;"></i> Backend & APIs</h3>
+                    <div class="tags tag-fade-in">
+                        <span style="--idx: 1;"><i class="fas fa-exchange-alt"></i> REST APIs</span>
+                        <span style="--idx: 2;"><i class="devicon-python-plain"></i> Python</span>
+                        <span style="--idx: 3;"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                        <span style="--idx: 4;"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                        <span style="--idx: 5;"><i class="devicon-redis-plain"></i> Redis</span>
+                        <span style="--idx: 6;"><i class="fas fa-stream"></i> Data Pipelines</span>
+                        <span style="--idx: 7;"><i class="fas fa-id-badge"></i> JWT/Auth</span>
+                        <span style="--idx: 8;"><i class="fas fa-bolt"></i> Async Programming</span>
+                        <span style="--idx: 9;"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card magnetic-lift reveal-item stagger-4">
+                    <h3><i class="fas fa-cloud" style="color: var(--acc-color-2); margin-right: 8px;"></i> Infrastructure & DevOps</h3>
+                    <div class="tags tag-fade-in">
+                        <span style="--idx: 1;"><i class="devicon-amazonwebservices-original"></i> AWS (EC2/S3)</span>
+                        <span style="--idx: 2;"><i class="devicon-docker-plain"></i> Docker</span>
+                        <span style="--idx: 3;"><i class="devicon-git-plain"></i> Git</span>
+                        <span style="--idx: 4;"><i class="devicon-bash-plain"></i> Bash</span>
+                        <span style="--idx: 5;"><i class="devicon-cmake-plain"></i> CMake</span>
+                        <span style="--idx: 6;"><i class="fas fa-infinity"></i> CI/CD Concepts</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card magnetic-lift reveal-item stagger-5">
+                    <h3><i class="fas fa-tools" style="color: var(--acc-color-1); margin-right: 8px;"></i> Security Tooling</h3>
+                    <div class="tags tag-fade-in">
+                        <span style="--idx: 1;"><i class="fas fa-wave-square"></i> Wireshark</span>
+                        <span style="--idx: 2;"><i class="fas fa-file-code"></i> PCAP Analysis</span>
+                        <span style="--idx: 3;"><i class="devicon-python-plain"></i> psutil</span>
+                        <span style="--idx: 4;"><i class="fas fa-memory"></i> Volatility Concepts</span>
+                        <span style="--idx: 5;"><i class="fas fa-spider"></i> Burp Suite</span>
+                        <span style="--idx: 6;"><i class="fas fa-shield-virus"></i> OWASP ZAP</span>
+                        <span style="--idx: 7;"><i class="fas fa-database"></i> sqlmap</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rotating Badge Strip -->
+            <div class="badge-strip-container reveal-item stagger-4">
+                <div class="badge-strip">
+                    <span>Google Cybersecurity Certificate</span><span class="dot">·</span>
+                    <span>Cisco Certified Junior Cybersecurity Analyst</span><span class="dot">·</span>
+                    <span>Certified Network Security Practitioner</span><span class="dot">·</span>
+                    <!-- Duplicate for seamless infinite scroll -->
+                    <span aria-hidden="true">Google Cybersecurity Certificate</span><span class="dot" aria-hidden="true">·</span>
+                    <span aria-hidden="true">Cisco Certified Junior Cybersecurity Analyst</span><span class="dot" aria-hidden="true">·</span>
+                    <span aria-hidden="true">Certified Network Security Practitioner</span><span class="dot" aria-hidden="true">·</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section reveal contact-section">
+            <h2 class="section-title reveal-item">05. Let's Build.</h2>
+            <h3 class="contact-headline reveal-item stagger-1">Let's Build Resilient Systems</h3>
+            <div class="contact-layout">
+                <div class="contact-methods">
+                    <a href="mailto:wayalbhushan7144@gmail.com" class="glass-card contact-method magnetic-lift reveal-item stagger-2">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </span>
+                        <span>wayalbhushan7144@gmail.com</span>
+                    </a>
+                    <a href="tel:+917447373760" class="glass-card contact-method magnetic-lift reveal-item stagger-3">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </span>
+                        <span>+91 7447 373760</span>
+                    </a>
+                    <div class="glass-card contact-method location magnetic-lift reveal-item stagger-4">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </span>
+                        <span>Indian Institute of Information Technology (IIIT) Bhopal</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card reveal-item stagger-5">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary); font-family: var(--font-heading);">Want to connect?</h3>
+                    <form action="https://formsubmit.co/wayalbhushan7144@gmail.com" method="POST" class="contact-form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="email">Reply-To Email</label>
+                            <input type="email" id="email" name="email" required placeholder="name@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="_subject" required placeholder="Interview / General Request">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Transmission Payload</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-cyber form-submit" style="width: 100%; margin-top: 10px; padding: 1rem;">Execute_Send()</button>
+                    </form>
+                </div>
+            </div>
+            
+            <footer class="footer glass-card reveal-item stagger-5" style="margin-top: 4rem; padding: 2.5rem 3rem; position: relative; overflow: hidden; border-bottom: none; border-left: none; border-right: none; border-radius: 12px 12px 0 0;">
+                <div class="footer-scanline"></div>
+                
+                <div class="footer-layout" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; width: 100%;">
+                    
+                    <div class="sys-status" style="display: flex; align-items: center; gap: 12px; font-family: var(--font-tech); font-size: 1rem; color: var(--text-secondary);">
+                        <div class="status-pulse"></div>
+                        <span>SYS.ONLINE // PORT_443_SECURE</span>
+                    </div>
+
+                    <div class="footer-center" style="text-align: center; flex: 1; min-width: 300px;">
+                        <p class="terminal-copy" style="font-family: var(--font-tech); font-size: 1.15rem; color: var(--text-primary); margin: 0;">
+                            <span style="color: var(--acc-color-1);">root@nexus:~#</span> echo "&copy; 2026 Bhushan Wayal"
+                        </p>
+                        <p style="font-family: var(--font-tech); font-size: 0.9rem; color: rgba(255,255,255,0.4); margin-top: 8px;">
+                            Engineered with C++, Python & Caffeine.
+                        </p>
+                    </div>
+
+                    <div class="footer-actions" style="display: flex; align-items: center; gap: 20px;">
+                        <div class="footer-socials" style="display: flex; gap: 15px;">
+                            <a href="https://github.com/wayalbhushan" target="_blank" class="magnetic social-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                            <a href="https://www.linkedin.com/in/bhushan-wayal-b71w44/" target="_blank" class="magnetic social-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        </div>
+                        
+                        <div class="divider" style="width: 1px; height: 26px; background: rgba(255,255,255,0.2);"></div>
+                        
+                        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="magnetic back-to-top" title="Return to Root" style="background: transparent; border: 1px solid rgba(0,255,102,0.3); color: var(--acc-color-1); width: 48px; height: 48px; border-radius: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Terminal Overlay -->
+    <div id="terminal-overlay" class="terminal-overlay hidden">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="close-btn" id="close-terminal"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                <div class="terminal-title">bhushan@sys: ~ (bash)</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-output" id="terminal-output">
+                    <p class="sys-msg">INIT BW-OS v2.4-secure...</p>
+                    <p class="sys-msg">Establishing zero-trust connection... DONE.</p>
+                    <p class="sys-msg">Type 'help' for a list of available commands.</p>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">guest@sys:~$</span>
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
